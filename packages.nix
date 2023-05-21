@@ -4,7 +4,6 @@
     _1password-gui
     appimage-run
     arc-theme
-    dunst
     fd
     gcc
     git
@@ -15,8 +14,7 @@
     killall
     kitty
     lxappearance
-    monero
-    monero-gui
+    libnotify
     neovim
     nitrogen
     nixfmt
