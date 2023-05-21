@@ -3,13 +3,10 @@
   environment.systemPackages = with pkgs; [
     _1password-gui
     appimage-run
-    arc-theme
     fd
     gcc
     git
     gnumake
-    gruvbox-dark-gtk
-    gruvbox-dark-icons-gtk
     htop
     killall
     kitty
@@ -29,7 +26,6 @@
     rnix-lsp
     rofi
     scrot
-    sqlite
     texlive.combined.scheme-medium
     tor-browser-bundle-bin
     tree-sitter
