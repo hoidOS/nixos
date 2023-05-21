@@ -32,6 +32,7 @@
     unclutter
     ungoogled-chromium
     unzip
+    virt-manager
     vim
     wget
     xclip

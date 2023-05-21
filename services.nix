@@ -54,6 +54,8 @@
       enable = true;
       interval = "weekly";
     };
+    # Keyring for Mailspring
+    gnome.gnome-keyring.enable = true;
 
   };
 }

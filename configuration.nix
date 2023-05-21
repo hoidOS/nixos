@@ -9,6 +9,7 @@
       ./programs.nix
       ./services.nix
       ./settings.nix
+      ./virt.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -27,7 +28,7 @@
   security.sudo.wheelNeedsPassword = false;
   users.users.oedon = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "mlocate" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "mlocate" "docker" "libvirtd" ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
   };
 
