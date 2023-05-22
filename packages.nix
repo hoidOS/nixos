@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    _1password-gui
+    unstable._1password-gui
     appimage-run
     fd
     gcc
@@ -12,7 +12,7 @@
     kitty
     lxappearance
     libnotify
-    neovim
+    unstable.neovim
     nitrogen
     nixfmt
     nox
@@ -45,7 +45,7 @@
     nodejs
     python3
     python310Packages.pip
-    rustup
+    unstable.rustup
 
   ];
 

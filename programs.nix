@@ -8,11 +8,10 @@
       enable = true;
       enableSSHSupport = true;
     };
-    neovim.vimAlias = true;
-    neovim.viAlias = true;
+    neovim = {
+      vimAlias = true;
+      viAlias = true;
+    };
     zsh.enable = true;
   };
-
-  # programs.sway.enable = true;
-
 }
