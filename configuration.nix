@@ -3,6 +3,7 @@
 {
   imports =
     [
+      ./cron.nix
       ./hardware-configuration.nix
       ./overlays.nix
       ./packages.nix
@@ -10,6 +11,7 @@
       ./services.nix
       ./settings.nix
       ./virt.nix
+      ./xserver.nix
     ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
@@ -19,8 +21,12 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Enable sound.
-  sound.enable = true;
-  hardware.pulseaudio.enable = true;
+  # rtkit is optional but recommended for pipewire
+  security.rtkit.enable = true;
+  # sound.enable = true;
+  # hardware.pulseaudio.enable = true;
+
+  # Nvidia Setting
   hardware.opengl.enable = true;
   # hardware.nvidia.modesetting.enable = true;
 

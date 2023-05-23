@@ -46,7 +46,5 @@
     python3
     python310Packages.pip
     unstable.rustup
-
   ];
-
 }
