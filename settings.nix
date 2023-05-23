@@ -33,9 +33,9 @@
     ];
   };
 
-  nixpkgs.config = {
-    allowUnfree = true;
-    joypixels.acceptLicense = true;
-  };
+  # nixpkgs.config = {
+  #   allowUnfree = true;
+  #   joypixels.acceptLicense = true;
+  # };
 
 }
