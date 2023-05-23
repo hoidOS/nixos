@@ -20,6 +20,7 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
+        config.joypixels.acceptLicense = true;
         overlays = [ overlay-unstable overlay-dwm ];
       };
     in
