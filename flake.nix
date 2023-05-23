@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-22.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
@@ -20,7 +20,6 @@
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
-        config.joypixels.acceptLicense = true;
         overlays = [ overlay-unstable overlay-dwm ];
       };
     in

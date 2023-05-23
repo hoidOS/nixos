@@ -20,7 +20,7 @@
     fontDir.enable = true;
     enableGhostscriptFonts = true;
     fonts = with pkgs; [
-      joypixels
+      # joypixels
       liberation_ttf
       noto-fonts
       noto-fonts-cjk
