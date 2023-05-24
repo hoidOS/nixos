@@ -16,12 +16,13 @@
       };
 
       overlay-dwm = import ./overlays/dwm.nix;
+      overlay-dwmblocks = import ./overlays/dwmblocks.nix;
 
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
         config.joypixels.acceptLicense = true;
-        overlays = [ overlay-unstable overlay-dwm ];
+        overlays = [ overlay-unstable overlay-dwm overlay-dwmblocks ];
       };
     in
     {

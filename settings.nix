@@ -26,11 +26,11 @@
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
-      ubuntu_font_family
-      unifont
+      fira-code
+      fira-code-symbols
       # ICONS
-      siji
-      (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" "FiraMono" "Go-Mono" "Inconsolata" "JetBrainsMono" ]; })
+      # siji
+      (nerdfonts.override { fonts = [ "FiraCode" "Inconsolata" "JetBrainsMono" ]; })
     ];
   };
 

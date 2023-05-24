@@ -3,6 +3,7 @@
   environment.systemPackages = with pkgs; [
     unstable._1password-gui
     appimage-run
+    dwmblocks
     fd
     gcc
     git

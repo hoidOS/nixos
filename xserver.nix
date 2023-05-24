@@ -18,7 +18,7 @@
           dunst &
           nitrogen --restore &
           picom &
-          # dwmblocks &
+          dwmblocks &
           unclutter &
         '';
       };
