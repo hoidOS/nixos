@@ -5,7 +5,6 @@
     [
       ./cron.nix
       ./hardware-configuration.nix
-      # ./overlays.nix
       ./packages.nix
       ./programs.nix
       ./services.nix

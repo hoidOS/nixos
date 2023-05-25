@@ -27,7 +27,7 @@
       noto-fonts-cjk
       noto-fonts-emoji
       # ICONS
-      siji
+      # siji
       (nerdfonts.override { fonts = [ "FiraCode" "Inconsolata" "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
     ];
   };
