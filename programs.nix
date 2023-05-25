@@ -8,10 +8,14 @@
       enable = true;
       enableSSHSupport = true;
     };
+    # Neovim
     neovim = {
+      enable = true;
+      package = pkgs.unstable.neovim-unwrapped;
       vimAlias = true;
       viAlias = true;
     };
+    # zsh
     zsh.enable = true;
   };
 }

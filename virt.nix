@@ -6,5 +6,4 @@
     # Docker
     docker.enable = true;
   };
-
 }

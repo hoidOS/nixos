@@ -5,8 +5,16 @@
       enable = true;
       videoDrivers = [ "nvidia" ];
 
+      # Configure keymap in X11
+      layout = "us,us";
+      xkbVariant = ",intl";
+      xkbOptions = "grp:shifts_toggle, grp_led:caps, caps:escape";
+      autoRepeatDelay = 300;
+      autoRepeatInterval = 50;
+
+      # Login Display settings
       displayManager = {
-        # displayManager.startx.enable = true;
+        # startx.enable = true;
         gdm.enable = true;
         gdm.autoSuspend = false;
         defaultSession = "none+dwm";
@@ -23,20 +31,16 @@
         '';
       };
 
+      # Window managers
       windowManager = {
         dwm.enable = true;
         # leftwm.enable = true;
       };
 
+      # Desktop managers
       desktopManager = {
         # desktopManager.gnome.enable = true;
       };
-
-      # Configure keymap in X11
-      layout = "us,de";
-      xkbOptions = "grp:shifts_toggle, grp_led:caps, caps:escape";
-      autoRepeatDelay = 300;
-      autoRepeatInterval = 50;
     };
   };
 }

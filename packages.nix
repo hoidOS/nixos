@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    unstable._1password-gui
     appimage-run
     dwmblocks
     fd
@@ -11,12 +10,9 @@
     htop
     killall
     kitty
-    lxappearance
     libnotify
-    unstable.neovim
+    lxappearance
     nitrogen
-    nixfmt
-    nox
     p7zip
     pandoc
     pcmanfm
@@ -24,21 +20,26 @@
     pulsemixer
     rclone
     ripgrep
-    rnix-lsp
     rofi
     scrot
     texlive.combined.scheme-medium
     tor-browser-bundle-bin
-    tree-sitter
-    unclutter
+    unclutter-xfixes
     ungoogled-chromium
     unzip
-    virt-manager
     vim
+    virt-manager
     wget
     xclip
     xorg.setxkbmap
-    xsel
+    # xsel
+
+    # Unstable
+    unstable._1password-gui
+    # unstable.neovim
+    unstable.tree-sitter
+    unstable.nixfmt
+    unstable.rnix-lsp
 
     # Developer
     luajitPackages.luarocks

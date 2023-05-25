@@ -1,8 +1,16 @@
 { config, pkgs, ... }:
 {
+  # Networking
   networking = {
     hostName = "3900X"; # Define your hostname.
     networkmanager.enable = true; # Easiest to use and most distros use this by default.
+
+    # Open ports in the firewall.
+    # firewall.allowedTCPPorts = [ ... ];
+    # firewall.allowedUDPPorts = [ ... ];
+    # Or disable the firewall altogether.
+    # firewall.enable = false;
+
   };
 
   # Set your time zone.
@@ -16,6 +24,7 @@
     useXkbConfig = false; # use xkbOptions in tty.
   };
 
+  # Fonts
   fonts = {
     fontconfig.enable = true;
     fontDir.enable = true;
@@ -26,15 +35,7 @@
       noto-fonts
       noto-fonts-cjk
       noto-fonts-emoji
-      # ICONS
-      # siji
       (nerdfonts.override { fonts = [ "FiraCode" "Inconsolata" "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
     ];
   };
-
-  # nixpkgs.config = {
-  #   allowUnfree = true;
-  #   joypixels.acceptLicense = true;
-  # };
-
 }

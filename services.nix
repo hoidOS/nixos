@@ -23,7 +23,6 @@
     };
 
     printing = {
-      # Enable CUPS to print documents.
       enable = true;
       drivers = [ pkgs.samsung-unified-linux-driver_1_00_37 ];
     };
@@ -44,6 +43,7 @@
 
     # Start emacs daemon
     emacs.enable = true;
+
     # Keyring
     gnome.gnome-keyring.enable = true;
   };

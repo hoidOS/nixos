@@ -6,8 +6,10 @@
 
   outputs = { self, nixpkgs, nixpkgs-unstable, ... }:
     let
+      # System
       system = "x86_64-linux";
 
+      # Unstable Overlay
       overlay-unstable = final: prev: {
         unstable = import nixpkgs-unstable {
           inherit system;
@@ -15,9 +17,11 @@
         };
       };
 
+      # Pkgs Overlays
       overlay-dwm = import ./overlays/dwm.nix;
       overlay-dwmblocks = import ./overlays/dwmblocks.nix;
 
+      # Define pkgs
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
