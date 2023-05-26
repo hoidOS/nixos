@@ -13,6 +13,7 @@
     libnotify
     lxappearance
     nitrogen
+    nix-prefetch-github                         # nix-prefetch-github hoidOS dwm
     p7zip
     pandoc
     pcmanfm
