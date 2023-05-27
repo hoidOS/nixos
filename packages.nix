@@ -19,6 +19,7 @@
     pcmanfm
     picom
     pulsemixer
+    polybar
     rclone
     ripgrep
     rofi

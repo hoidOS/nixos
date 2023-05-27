@@ -34,7 +34,7 @@
       # Window managers
       windowManager = {
         dwm.enable = true;
-        # leftwm.enable = true;
+        leftwm.enable = true;
       };
 
       # Desktop managers

@@ -2,9 +2,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+    leftwm.url = "github:leftwm/leftwm";
   };
 
-  outputs = { self, nixpkgs, nixpkgs-unstable, ... }:
+  outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, ... }:
     let
       # System
       system = "x86_64-linux";
@@ -20,13 +21,14 @@
       # Pkgs Overlays
       overlay-dwm = import ./overlays/dwm.nix;
       overlay-dwmblocks = import ./overlays/dwmblocks.nix;
+      overlay-leftwm = inputs.leftwm.overlay;
 
       # Define pkgs
       pkgs = import nixpkgs {
         inherit system;
         config.allowUnfree = true;
         config.joypixels.acceptLicense = true;
-        overlays = [ overlay-unstable overlay-dwm overlay-dwmblocks ];
+        overlays = [ overlay-unstable overlay-dwm overlay-dwmblocks overlay-leftwm ];
       };
     in
     {
