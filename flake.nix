@@ -2,6 +2,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
+
+    # Overlays
     leftwm.url = "github:leftwm/leftwm";
   };
 
@@ -28,7 +30,12 @@
         inherit system;
         config.allowUnfree = true;
         config.joypixels.acceptLicense = true;
-        overlays = [ overlay-unstable overlay-dwm overlay-dwmblocks overlay-leftwm ];
+        overlays = [
+          overlay-dwm
+          overlay-dwmblocks
+          overlay-leftwm
+          overlay-unstable
+        ];
       };
     in
     {

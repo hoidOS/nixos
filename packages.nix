@@ -2,6 +2,7 @@
 {
   environment.systemPackages = with pkgs; [
     appimage-run
+    discord
     dwmblocks
     fd
     gcc
