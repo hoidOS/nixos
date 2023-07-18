@@ -17,5 +17,7 @@
     };
     # zsh
     zsh.enable = true;
+
+    steam.enable = true;
   };
 }
