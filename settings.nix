@@ -9,7 +9,7 @@
     # firewall.allowedTCPPorts = [ ... ];
     # firewall.allowedUDPPorts = [ ... ];
     # Or disable the firewall altogether.
-    # firewall.enable = false;
+    firewall.enable = false;
 
   };
 
@@ -29,7 +29,7 @@
     fontconfig.enable = true;
     fontDir.enable = true;
     enableGhostscriptFonts = true;
-    fonts = with pkgs; [
+    packages = with pkgs; [
       joypixels
       liberation_ttf
       noto-fonts

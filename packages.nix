@@ -29,6 +29,8 @@
     tor-browser-bundle-bin
     unclutter-xfixes
     ungoogled-chromium
+    mullvad-vpn
+    yt-dlp
     unzip
     vim
     virt-manager

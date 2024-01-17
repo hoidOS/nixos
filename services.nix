@@ -22,6 +22,15 @@
       configDir = "/home/oedon/.config/syncthing";
     };
 
+    tailscale = {
+        enable = true;
+        package = pkgs.unstable.tailscale;
+        };
+
+    mullvad-vpn = {
+        enable = true;
+        };
+
     printing = {
       enable = true;
       drivers = [ pkgs.samsung-unified-linux-driver_1_00_37 ];
@@ -30,7 +39,7 @@
     # Locate Service
     locate = {
       enable = true;
-      locate = pkgs.mlocate;
+      package = pkgs.mlocate;
       interval = "hourly";
       localuser = null;
     };

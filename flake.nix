@@ -1,10 +1,10 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
     # Overlays
-    leftwm.url = "github:leftwm/leftwm";
+    # leftwm.url = "github:leftwm/leftwm";
   };
 
   outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, ... }:
@@ -23,7 +23,7 @@
       # Pkgs Overlays
       overlay-dwm = import ./overlays/dwm.nix;
       overlay-dwmblocks = import ./overlays/dwmblocks.nix;
-      overlay-leftwm = inputs.leftwm.overlay;
+      # overlay-leftwm = inputs.leftwm.overlay;
 
       # Define pkgs
       pkgs = import nixpkgs {
@@ -33,7 +33,7 @@
         overlays = [
           overlay-dwm
           overlay-dwmblocks
-          overlay-leftwm
+          # overlay-leftwm
           overlay-unstable
         ];
       };
