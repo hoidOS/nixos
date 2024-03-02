@@ -51,7 +51,10 @@
     };
 
     # Start emacs daemon
-    emacs.enable = true;
+    emacs = {
+        enable = true;
+        package = pkgs.emacs29;
+    };
 
     # Keyring
     gnome.gnome-keyring.enable = true;
