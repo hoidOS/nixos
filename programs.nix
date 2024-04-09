@@ -11,7 +11,8 @@
     # Neovim
     neovim = {
       enable = true;
-      package = pkgs.unstable.neovim-unwrapped;
+      # package = pkgs.unstable.neovim-unwrapped;
+      package = pkgs.neovim-unwrapped; #nightly overlay
       vimAlias = true;
       viAlias = true;
     };

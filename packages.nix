@@ -13,14 +13,15 @@
     kitty
     libnotify
     lxappearance
+    mullvad-vpn
     nitrogen
     nix-prefetch-github                         # nix-prefetch-github hoidOS dwm
     p7zip
     pandoc
     pcmanfm
     picom
-    pulsemixer
     polybar
+    pulsemixer
     rclone
     ripgrep
     rofi
@@ -29,22 +30,19 @@
     tor-browser-bundle-bin
     unclutter-xfixes
     ungoogled-chromium
-    mullvad-vpn
-    yt-dlp
     unzip
     vim
     virt-manager
     wget
     xclip
     xorg.setxkbmap
-    # xsel
+    yt-dlp
 
     # Unstable
     unstable._1password-gui
-    # unstable.neovim
     unstable.tree-sitter
     unstable.nixfmt-rfc-style
-    # unstable.rnix-lsp
+    unstable.wezterm
 
     # Developer
     luajitPackages.luarocks
