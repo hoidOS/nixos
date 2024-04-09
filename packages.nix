@@ -43,8 +43,8 @@
     unstable._1password-gui
     # unstable.neovim
     unstable.tree-sitter
-    unstable.nixfmt
-    unstable.rnix-lsp
+    unstable.nixfmt-rfc-style
+    # unstable.rnix-lsp
 
     # Developer
     luajitPackages.luarocks

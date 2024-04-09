@@ -41,6 +41,7 @@
       # Desktop managers
       desktopManager = {
         # desktopManager.gnome.enable = true;
+        # plasma6.enable = true;
       };
     };
   };
