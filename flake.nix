@@ -3,9 +3,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-
-    # Overlays
-    # leftwm.url = "github:leftwm/leftwm";
   };
 
   outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, neovim-nightly-overlay, ... }:
@@ -25,7 +22,6 @@
       overlay-dwm = import ./overlays/dwm.nix;
       overlay-dwmblocks = import ./overlays/dwmblocks.nix;
       overlay-neovim = neovim-nightly-overlay.overlay;
-      # overlay-leftwm = inputs.leftwm.overlay;
 
       # Define pkgs
       pkgs = import nixpkgs {
@@ -35,7 +31,6 @@
         overlays = [
           overlay-dwm
           overlay-dwmblocks
-          # overlay-leftwm
           overlay-unstable
           overlay-neovim
         ];

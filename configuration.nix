@@ -38,7 +38,13 @@
   };
 
   # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    # settings.X11Forwarding = true;
+  };
+  # programs.ssh.forwardX11 = true;
+  # programs.ssh.setXAuthLocation = true;
+  
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions

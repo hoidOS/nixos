@@ -35,6 +35,7 @@
     virt-manager
     wget
     xclip
+    xsel
     xorg.setxkbmap
     yt-dlp
 
