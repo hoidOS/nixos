@@ -15,7 +15,7 @@
     lxappearance
     mullvad-vpn
     nitrogen
-    nix-prefetch-github                         # nix-prefetch-github hoidOS dwm
+    nix-prefetch-github # nix-prefetch-github hoidOS dwm
     p7zip
     pandoc
     pcmanfm
@@ -29,6 +29,7 @@
     texlive.combined.scheme-medium
     tor-browser-bundle-bin
     unclutter-xfixes
+    unstable.keymapp
     ungoogled-chromium
     unzip
     vim
@@ -44,6 +45,7 @@
     unstable.tree-sitter
     unstable.nixfmt-rfc-style
     unstable.wezterm
+    unstable.nh
 
     # Developer
     luajitPackages.luarocks

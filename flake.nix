@@ -2,10 +2,12 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
     nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+    # neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+
+    catppuccin.url = "github:catppuccin/nix";
   };
 
-  outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, neovim-nightly-overlay, ... }:
+  outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, catppuccin, ... }:
     let
       # System
       system = "x86_64-linux";
@@ -21,7 +23,7 @@
       # Pkgs Overlays
       overlay-dwm = import ./overlays/dwm.nix;
       overlay-dwmblocks = import ./overlays/dwmblocks.nix;
-      overlay-neovim = neovim-nightly-overlay.overlay;
+      # overlay-neovim = neovim-nightly-overlay.overlay;
 
       # Define pkgs
       pkgs = import nixpkgs {
@@ -32,7 +34,7 @@
           overlay-dwm
           overlay-dwmblocks
           overlay-unstable
-          overlay-neovim
+          # overlay-neovim
         ];
       };
     in
@@ -43,6 +45,7 @@
           # Overlays-module makes "pkgs.unstable" available in configuration.nix
           # ({ config, pkgs, ... }: { nixpkgs.overlays = [ overlay-unstable ]; })
           ./configuration.nix
+          catppuccin.nixosModules.catppuccin
         ];
       };
     };

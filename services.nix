@@ -23,13 +23,13 @@
     };
 
     tailscale = {
-        enable = true;
-        package = pkgs.unstable.tailscale;
-        };
+      enable = true;
+      package = pkgs.unstable.tailscale;
+    };
 
     mullvad-vpn = {
-        enable = true;
-        };
+      enable = true;
+    };
 
     printing = {
       enable = true;
@@ -52,11 +52,16 @@
 
     # Start emacs daemon
     emacs = {
-        enable = true;
-        package = pkgs.emacs29;
+      enable = true;
+      package = pkgs.emacs29;
     };
 
     # Keyring
     gnome.gnome-keyring.enable = true;
+
+    ollama = {
+      enable = true;
+      acceleration = "cuda";
+    };
   };
 }

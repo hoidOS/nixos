@@ -29,6 +29,9 @@
   hardware.opengl.enable = true;
   # hardware.nvidia.modesetting.enable = true;
 
+  # Zsa
+  hardware.keyboard.zsa.enable = true;
+
   # Define a user account. Don't forget to set a password with ‘passwd’.
   security.sudo.wheelNeedsPassword = false;
   users.users.oedon = {
@@ -44,7 +47,7 @@
   };
   # programs.ssh.forwardX11 = true;
   # programs.ssh.setXAuthLocation = true;
-  
+
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
