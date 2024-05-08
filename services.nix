@@ -38,7 +38,7 @@
 
     # Locate Service
     locate = {
-      enable = true;
+      enable = false;
       package = pkgs.mlocate;
       interval = "hourly";
       localuser = null;
@@ -58,10 +58,5 @@
 
     # Keyring
     gnome.gnome-keyring.enable = true;
-
-    ollama = {
-      enable = true;
-      acceleration = "cuda";
-    };
   };
 }

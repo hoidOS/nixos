@@ -12,17 +12,15 @@
     # firewall.allowedUDPPorts = [ ... ];
     # Or disable the firewall altogether.
     firewall.enable = false;
-
   };
 
   services.resolved = {
-      enable = true;
-      dnssec = "true";
-      domains = [ "~." ];
-      fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
-      dnsovertls = "true";
+    enable = true;
+    dnssec = "true";
+    domains = [ "~." ];
+    fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+    dnsovertls = "true";
   };
-
 
   # Set your time zone.
   time.timeZone = "Europe/Amsterdam";

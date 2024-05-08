@@ -26,7 +26,7 @@
     ripgrep
     rofi
     scrot
-    texlive.combined.scheme-medium
+#    texlive.combined.scheme-medium
     tor-browser-bundle-bin
     unclutter-xfixes
     unstable.keymapp
@@ -52,7 +52,6 @@
     nodePackages.npm
     nodejs
     python3
-    python310Packages.pip
     unstable.rustup
   ];
 }
