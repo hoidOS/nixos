@@ -56,6 +56,13 @@
       package = pkgs.emacs29;
     };
 
+    # ollama = {
+    #   enable = true;
+    #   acceleration = "cuda";
+    #   package = pkgs.unstable.ollama;
+    #   listenAddress = "10.0.0.97:11434";
+    #   };
+
     # Keyring
     gnome.gnome-keyring.enable = true;
   };

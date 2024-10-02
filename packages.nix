@@ -26,6 +26,7 @@
     ripgrep
     rofi
     scrot
+    wofi
 #    texlive.combined.scheme-medium
     tor-browser-bundle-bin
     unclutter-xfixes

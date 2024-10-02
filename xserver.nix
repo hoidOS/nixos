@@ -3,11 +3,12 @@
   services = {
     xserver = {
       enable = true;
-      videoDrivers = [ "nvidia" ];
+      # videoDrivers = [ "nvidia" ];
+      videoDrivers = [ "amdgpu" ];
 
       # Configure keymap in X11
-      layout = "us,us";
-      xkbVariant = ",intl";
+      xkb.layout = "us,us";
+      xkb.variant = ",intl";
       # xkbOptions = "grp:shifts_toggle, grp_led:caps, caps:escape";
       autoRepeatDelay = 300;
       autoRepeatInterval = 50;
@@ -16,8 +17,8 @@
       displayManager = {
         # startx.enable = true;
         gdm.enable = true;
+        gdm.wayland = true;
         gdm.autoSuspend = false;
-        defaultSession = "none+leftwm";
 
         # sessionCommands = ''
         #   xrandr --output DP-2 --mode 3440x1440 --rate 144
@@ -44,5 +45,18 @@
         # plasma6.enable = true;
       };
     };
+    displayManager = {
+        # defaultSession = "none+leftwm";
+        defaultSession = "hyprland";
+      };
   };
+
+  programs.waybar.enable = true;
+  programs.hyprland = {
+    # Install the packages from nixpkgs
+    enable = true;
+    # Whether to enable XWayland
+    xwayland.enable = true;
+  };
+
 }

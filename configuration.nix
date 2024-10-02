@@ -13,6 +13,7 @@
       ./xserver.nix
     ];
 
+  # Flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Use the systemd-boot EFI boot loader.
@@ -26,7 +27,7 @@
   # hardware.pulseaudio.enable = true;
 
   # Nvidia Setting
-  hardware.opengl.enable = true;
+  # hardware.opengl.enable = true;
   # hardware.nvidia.modesetting.enable = true;
 
   # Zsa
