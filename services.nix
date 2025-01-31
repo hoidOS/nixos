@@ -50,6 +50,8 @@
       interval = "weekly";
     };
 
+    flatpak.enable = true;
+
     # Start emacs daemon
     emacs = {
       enable = true;
