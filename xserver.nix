@@ -41,7 +41,7 @@
 
       # Desktop managers
       desktopManager = {
-        # desktopManager.gnome.enable = true;
+        gnome.enable = true;
         # plasma6.enable = true;
       };
     };
@@ -52,6 +52,7 @@
   };
 
   programs.waybar.enable = true;
+
   programs.hyprland = {
     # Install the packages from nixpkgs
     enable = true;

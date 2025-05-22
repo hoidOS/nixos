@@ -40,6 +40,7 @@
     xsel
     xorg.setxkbmap
     yt-dlp
+    ghostty
 
     # Unstable
     unstable._1password-gui
