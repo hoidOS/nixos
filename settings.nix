@@ -44,7 +44,8 @@
       noto-fonts
       noto-fonts-cjk-sans
       noto-fonts-emoji
-      (nerdfonts.override { fonts = [ "FiraCode" "Inconsolata" "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
+      nerd-fonts.jetbrains-mono
+      # (nerdfonts.override { fonts = [ "FiraCode" "Inconsolata" "JetBrainsMono" "NerdFontsSymbolsOnly" ]; })
     ];
   };
 }

@@ -37,12 +37,12 @@
     };
 
     # Locate Service
-    locate = {
-      enable = false;
-      package = pkgs.mlocate;
-      interval = "hourly";
-      localuser = null;
-    };
+    # locate = {
+    #   enable = false;
+    #   package = pkgs.mlocate;
+    #   interval = "hourly";
+    #   localuser = null;
+    # };
 
     # TRIM
     fstrim = {
@@ -55,7 +55,7 @@
     # Start emacs daemon
     emacs = {
       enable = true;
-      package = pkgs.emacs29;
+      # package = pkgs.emacs29;
     };
 
     ollama = {
