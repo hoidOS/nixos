@@ -13,14 +13,14 @@
     };
 
     # Syncthing for shared folders (configured directly in the syncthing client)
-    syncthing = {
-      enable = true;
-      user = "oedon";
-      group = "users";
-      openDefaultPorts = true;
-      systemService = true;
-      configDir = "/home/oedon/.config/syncthing";
-    };
+    # syncthing = {
+    #   enable = true;
+    #   user = "oedon";
+    #   group = "users";
+    #   openDefaultPorts = true;
+    #   systemService = true;
+    #   configDir = "/home/oedon/.config/syncthing";
+    # };
 
     tailscale = {
       enable = true;

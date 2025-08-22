@@ -1,20 +1,22 @@
 { pkgs, ... }:
 
 {
-  imports =
-    [
-      ./cron.nix
-      ./hardware-configuration.nix
-      ./packages.nix
-      ./programs.nix
-      ./services.nix
-      ./settings.nix
-      ./virt.nix
-      ./xserver.nix
-    ];
+  imports = [
+    ./cron.nix
+    ./hardware-configuration.nix
+    ./packages.nix
+    ./programs.nix
+    ./services.nix
+    ./settings.nix
+    ./virt.nix
+    ./xserver.nix
+  ];
 
   # Flakes
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
@@ -35,9 +37,14 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   security.sudo.wheelNeedsPassword = false;
-  users.users.oedon = {
+  users.users.hoid = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "mlocate" "docker" "libvirtd" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [
+      "wheel"
+      "mlocate"
+      "docker"
+      "libvirtd"
+    ]; # Enable ‘sudo’ for the user.
     shell = pkgs.zsh;
   };
 
@@ -48,7 +55,6 @@
   };
   # programs.ssh.forwardX11 = true;
   # programs.ssh.setXAuthLocation = true;
-
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
