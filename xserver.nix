@@ -34,21 +34,21 @@
       };
 
       # Window managers
-      windowManager = {
-        dwm.enable = true;
-        leftwm.enable = true;
-      };
+      # windowManager = {
+      #   dwm.enable = true;
+      #   leftwm.enable = true;
+      # };
 
       # Desktop managers
-      desktopManager = {
-        gnome.enable = true;
-        # plasma6.enable = true;
-      };
+      # desktopManager = {
+      #   gnome.enable = true;
+      #   plasma6.enable = true;
+      # };
     };
     displayManager = {
-        # defaultSession = "none+leftwm";
-        defaultSession = "hyprland";
-      };
+      # defaultSession = "none+leftwm";
+      defaultSession = "hyprland";
+    };
   };
 
   programs.waybar.enable = true;

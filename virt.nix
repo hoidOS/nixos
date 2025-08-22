@@ -5,7 +5,7 @@
     libvirtd.enable = true;
 
     # Docker
-    # docker.enable = true;
+    docker.enable = true;
 
     # Podman
     # podman = {
