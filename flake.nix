@@ -9,7 +9,14 @@
     catppuccin.url = "github:catppuccin/nix";
   };
 
-  outputs = inputs @ { self, nixpkgs, nixpkgs-unstable, catppuccin, ... }:
+  outputs =
+    inputs@{
+      self,
+      nixpkgs,
+      nixpkgs-unstable,
+      catppuccin,
+      ...
+    }:
     let
       # System
       system = "x86_64-linux";
@@ -41,7 +48,7 @@
       };
     in
     {
-      nixosConfigurations."3900X" = nixpkgs.lib.nixosSystem {
+      nixosConfigurations."9800X3D" = nixpkgs.lib.nixosSystem {
         inherit pkgs system;
         modules = [
           ./configuration.nix

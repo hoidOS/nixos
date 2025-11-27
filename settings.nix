@@ -2,11 +2,14 @@
 {
   # Networking
   networking = {
-    hostName = "3900X"; # Define your hostname.
+    hostName = "9800X3D"; # Define your hostname.
     networkmanager.enable = true; # Easiest to use and most distros use this by default.
     # nameservers = [ "100.100.100.100" ];
     # search = [ "robin-cobra.ts.net" ];
-    nameservers = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+    nameservers = [
+      "1.1.1.1#one.one.one.one"
+      "1.0.0.1#one.one.one.one"
+    ];
     # Open ports in the firewall.
     # firewall.allowedTCPPorts = [ ... ];
     # firewall.allowedUDPPorts = [ ... ];
@@ -18,7 +21,10 @@
     enable = true;
     dnssec = "true";
     domains = [ "~." ];
-    fallbackDns = [ "1.1.1.1#one.one.one.one" "1.0.0.1#one.one.one.one" ];
+    fallbackDns = [
+      "1.1.1.1#one.one.one.one"
+      "1.0.0.1#one.one.one.one"
+    ];
     dnsovertls = "true";
   };
 

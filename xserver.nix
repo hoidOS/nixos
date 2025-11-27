@@ -3,8 +3,8 @@
   services = {
     xserver = {
       enable = true;
-      # videoDrivers = [ "nvidia" ];
-      videoDrivers = [ "amdgpu" ];
+      videoDrivers = [ "nvidia" ];
+      # videoDrivers = [ "amdgpu" ];
 
       # Configure keymap in X11
       xkb.layout = "us,us";
