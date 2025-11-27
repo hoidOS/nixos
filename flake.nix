@@ -7,6 +7,12 @@
 
     # neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     catppuccin.url = "github:catppuccin/nix";
+
+    lanzaboote = {
+      url = "github:nix-community/lanzaboote/v0.4.3";
+      # Optional but recommended to limit the size of your system closure.
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
