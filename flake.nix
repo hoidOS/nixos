@@ -21,6 +21,7 @@
       nixpkgs,
       nixpkgs-unstable,
       catppuccin,
+      lanzaboote,
       ...
     }:
     let
@@ -59,6 +60,7 @@
         modules = [
           ./configuration.nix
           catppuccin.nixosModules.catppuccin
+          lanzaboote.nixosModules.lanzaboote
         ];
       };
     };

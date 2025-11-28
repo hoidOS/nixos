@@ -27,14 +27,15 @@
     rofi
     scrot
     wofi
-#    texlive.combined.scheme-medium
-    tor-browser-bundle-bin
+    #    texlive.combined.scheme-medium
+    # tor-browser-bundle-bin
     unclutter-xfixes
     unstable.keymapp
     ungoogled-chromium
     unzip
     vim
     virt-manager
+    unstable.sbctl
     wget
     xclip
     xsel
