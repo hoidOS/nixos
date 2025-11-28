@@ -26,6 +26,7 @@
     ripgrep
     rofi
     scrot
+    statix
     wofi
     #    texlive.combined.scheme-medium
     # tor-browser-bundle-bin

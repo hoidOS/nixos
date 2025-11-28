@@ -1,18 +1,16 @@
 {
   inputs = {
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
-    # nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
-    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
-
-    # neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
-    catppuccin.url = "github:catppuccin/nix";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
 
     lanzaboote = {
       url = "github:nix-community/lanzaboote/v0.4.3";
       # Optional but recommended to limit the size of your system closure.
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+    catppuccin.url = "github:catppuccin/nix";
   };
 
   outputs =
@@ -37,8 +35,8 @@
       };
 
       # Pkgs Overlays
-      overlay-dwm = import ./overlays/dwm.nix;
-      overlay-dwmblocks = import ./overlays/dwmblocks.nix;
+      # overlay-dwm = import ./overlays/dwm.nix;
+      # overlay-dwmblocks = import ./overlays/dwmblocks.nix;
       # overlay-neovim = neovim-nightly-overlay.overlay;
 
       # Define pkgs
@@ -47,8 +45,8 @@
         config.allowUnfree = true;
         config.joypixels.acceptLicense = true;
         overlays = [
-          overlay-dwm
-          overlay-dwmblocks
+          # overlay-dwm
+          # overlay-dwmblocks
           overlay-unstable
           # overlay-neovim
         ];
