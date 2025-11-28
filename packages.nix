@@ -3,9 +3,9 @@
   environment.systemPackages = with pkgs; [
     appimage-run
     discord
-    dwmblocks
     fd
     gcc
+    ghostty
     git
     gnumake
     htop
@@ -20,41 +20,33 @@
     pandoc
     pcmanfm
     picom
-    polybar
     pulsemixer
     rclone
     ripgrep
     rofi
     scrot
     statix
-    wofi
-    #    texlive.combined.scheme-medium
-    # tor-browser-bundle-bin
     unclutter-xfixes
-    unstable.keymapp
     ungoogled-chromium
     unzip
     vim
     virt-manager
-    unstable.sbctl
     wget
-    xclip
-    xsel
-    xorg.setxkbmap
+    wl-clipboard
+    wofi
     yt-dlp
-    ghostty
 
     # Unstable
     unstable._1password-gui
-    unstable.tree-sitter
-    unstable.nixfmt-rfc-style
-    unstable.wezterm
+    unstable.keymapp
     unstable.nh
+    unstable.nixfmt-rfc-style
+    unstable.sbctl
+    unstable.tree-sitter
+    unstable.wezterm
 
     # Developer
     luajitPackages.luarocks
-    nodePackages.npm
-    nodejs
     python3
     unstable.rustup
   ];
