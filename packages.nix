@@ -5,12 +5,12 @@
     discord
     fd
     gcc
-    ghostty
     git
     gnumake
     htop
     killall
     kitty
+    hyprpaper
     libnotify
     lxappearance
     mullvad-vpn
@@ -35,6 +35,7 @@
     wl-clipboard
     wofi
     yt-dlp
+    waybar
 
     # Unstable
     unstable._1password-gui
