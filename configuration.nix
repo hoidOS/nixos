@@ -22,7 +22,7 @@
     trusted-users = [
       "root"
       "@wheel"
-      "kraftc"
+      "hoid"
     ];
     substituters = [
       "https://cache.nixos.org"
@@ -39,6 +39,7 @@
     ];
   };
 
+  # Secure boot
   boot = {
     loader = {
       efi.canTouchEfiVariables = true;
