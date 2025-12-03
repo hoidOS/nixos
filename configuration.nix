@@ -39,43 +39,6 @@
     ];
   };
 
-  # Secure boot
-  boot = {
-    loader = {
-      efi.canTouchEfiVariables = true;
-      # systemd-boot.enable = true;
-      systemd-boot.enable = lib.mkForce false;
-    };
-
-    lanzaboote = {
-      enable = true;
-      pkiBundle = "/var/lib/sbctl";
-    };
-  };
-
-  # Enable sound.
-  security.rtkit.enable = true;
-  # sound.enable = true;
-  # hardware.pulseaudio.enable = true;
-
-  hardware = {
-    graphics = {
-      enable = true;
-      enable32Bit = true;
-    };
-
-    nvidia = {
-      modesetting.enable = true;
-      powerManagement.enable = false;
-      powerManagement.finegrained = false;
-      open = true;
-      nvidiaSettings = true;
-      package = config.boot.kernelPackages.nvidiaPackages.stable;
-    };
-
-    keyboard.zsa.enable = true;
-  };
-
   # Define a user account. Don't forget to set a password with ‘passwd’.
   security.sudo.wheelNeedsPassword = false;
   users.users.hoid = {
