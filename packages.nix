@@ -8,34 +8,28 @@
     git
     gnumake
     htop
+    hyprpaper
+    hyprshot
     killall
     kitty
-    hyprpaper
     libnotify
     lxappearance
-    mullvad-vpn
-    nitrogen
-    nix-prefetch-github # nix-prefetch-github hoidOS dwm
     p7zip
     pandoc
     pcmanfm
-    picom
     pulsemixer
     rclone
     ripgrep
-    rofi
-    scrot
     statix
-    unclutter-xfixes
     ungoogled-chromium
     unzip
     vim
     virt-manager
+    waybar
     wget
     wl-clipboard
     wofi
     yt-dlp
-    waybar
 
     # Unstable
     unstable._1password-gui

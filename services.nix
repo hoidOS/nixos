@@ -53,5 +53,11 @@
 
     # Keyring
     gnome.gnome-keyring.enable = true;
+
+    # Enable the OpenSSH daemon.
+    openssh = {
+      enable = true;
+      # settings.X11Forwarding = true;
+    };
   };
 }
